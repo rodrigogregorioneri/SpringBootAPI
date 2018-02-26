@@ -60,3 +60,14 @@ https://github.com/rodrigogregorioneri/SpringBootAPI/blob/master/src/main/resour
 
 Não tive tempo habil para fazer os testes automatizados com o JUnit(Nunca usei Mockito por isso não pensei em usar primeiramente pois demoraria um tempo pra entender o framework e o tempo é pouco).
 
+Testes feitos em casa:
+
+<p>
+  <img  src="https://image.ibb.co/jrrCyH/Whats_App_Image_2018_02_25_at_23_29_30.jpg">
+</p>
+
+<p>
+  <img  src="https://image.ibb.co/h3WO5x/Whats_App_Image_2018_02_25_at_23_29_48.jpg">
+</p>
+
+
