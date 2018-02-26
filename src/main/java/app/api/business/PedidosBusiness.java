@@ -45,7 +45,11 @@ public class PedidosBusiness {
   }
   
   public Pedidos get(java.lang.String id) throws Exception {
-    Pedidos result = repository.findOne(id);
+    if(id == null){
+      Page<Pedidos> result = repository.list(pageable);
+    }else{
+      Pedidos result = repository.findOne(id);
+    }
     return result;
   }
 
