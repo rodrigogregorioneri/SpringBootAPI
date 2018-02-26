@@ -72,4 +72,8 @@ Testes feitos em casa:
 
 # na branch DEV está algumas implementações que não estão prontas pois não tive tempo de terminar
 
+# algumas validações fiz no business(Pedidos) e outras fiz no proprios metodos Setters das entidades (pedidos)
+
+Espero esclarecer o que foi feito no projeto.
+
 
