@@ -14,6 +14,7 @@
     <version>0.0.1-SNAPSHOT</version>
     <description>Serviço Neri</description>
     <build>
+        <finalName>spring-boot-starter-parent</finalName>
         <sourceDirectory>src</sourceDirectory>
         <resources>
             <resource>
