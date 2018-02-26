@@ -39,7 +39,7 @@
 				<artifactId>spring-boot-maven-plugin</artifactId>
 				<version>1.5.10.RELEASE</version>
 				<configuration>
-					<finalName>spring-boot-starter-parent</finalName>
+					<finalName>neri_api</finalName>
 				</configuration>
 				<executions>
 					<execution>
