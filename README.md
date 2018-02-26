@@ -53,3 +53,8 @@ json:
 Formatted JSON Data
 {"content":[{"codigo_cliente":38,"datada_cadastro":null,"nome":"erer","numero_controle":78,"quantidade":15,"valor":100,"links":[]},{"codigo_cliente":59,"datada_cadastro":null,"nome":"erer","numero_controle":79,"quantidade":10,"valor":100,"links":[]}],"nome":"Rodrigo","sobrenome":"Gregorio Neri"}
 
+
+
+Caso seja necessario alterar alguma propriedade do banco basta ir no arquivo application.properties lá tem toda a configuração:
+https://github.com/rodrigogregorioneri/SpringBootAPI/blob/master/src/main/resources/application.properties
+
