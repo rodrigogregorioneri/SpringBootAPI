@@ -70,4 +70,6 @@ Testes feitos em casa:
   <img  src="https://image.ibb.co/h3WO5x/Whats_App_Image_2018_02_25_at_23_29_48.jpg">
 </p>
 
+# na branch DEV está algumas implementações que não estão prontas pois não tive tempo de terminar
+
 
