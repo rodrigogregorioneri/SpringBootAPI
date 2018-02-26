@@ -58,7 +58,7 @@ Formatted JSON Data
 Caso seja necessario alterar alguma propriedade do banco basta ir no arquivo application.properties lá tem toda a configuração:
 https://github.com/rodrigogregorioneri/SpringBootAPI/blob/master/src/main/resources/application.properties
 
-Não tive tempo habil para fazer os testes automatizados com o JUnit(Nunca usei Mockito por isso não pensei em usar primeiramente pois demoraria um tempo pra entender o framework e o tempo é pouco).
+Não tive tempo habil para fazer os testes automatizados com o JUnit(Nunca usei Mockito por isso não pensei em usar primeiramente pois demoraria um tempo pra entender o framework e o tempo é pouco) porém cheguei a importar o JUnit e o mockito no pom.xml e criei um pacote test que é o reflexo do Clientes e do Pedidos e criei 3 metodos para cada classe  com o @Before para iniciar as configurações iniciais do teste @Test para o teste em si e o @After pra executar após o teste.
 
 Testes feitos em casa:
 
