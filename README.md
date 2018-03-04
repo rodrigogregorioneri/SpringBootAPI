@@ -70,7 +70,16 @@ Testes feitos em casa:
   <img  src="https://image.ibb.co/h3WO5x/Whats_App_Image_2018_02_25_at_23_29_48.jpg">
 </p>
 
+
 Developer: Rodrigo Neri
 
 License: MIT
+
+# na branch DEV está algumas implementações que não estão prontas pois não tive tempo de terminar
+
+# algumas validações fiz no business(Pedidos) e outras fiz no proprios metodos Setters das entidades (pedidos)
+
+Espero esclarecer o que foi feito no projeto.
+
+
 

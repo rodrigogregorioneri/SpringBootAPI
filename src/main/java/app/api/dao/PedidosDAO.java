@@ -12,8 +12,8 @@ import org.springframework.transaction.annotation.*;
 public interface PedidosDAO extends JpaRepository<Pedidos, java.lang.String> {
 
   
-  @Query("SELECT entity FROM Pedidos entity WHERE entity.id = :id")
-  public Pedidos findOne(@Param(value="id") java.lang.String id);
+  @Query("SELECT entity FROM Pedidos entity WHERE entity.id = :id or datada_cadastro = :datada_cadastro")
+  public Pedidos findOne(@Param(value="id") java.lang.String id, @Param(value="data_cadastro") java.lang.String data_cadastro);
    
   @Modifying
   @Query("DELETE FROM Pedidos entity WHERE entity.id = :id")
