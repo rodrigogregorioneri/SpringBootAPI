@@ -19,15 +19,18 @@ public class PedidosBusiness {
   protected PedidosDAO repository;
 
   public List<Pedidos> post(final List<Pedidos> entity) throws Exception {
+      int cont = 0;
 	  for(Pedidos pedido : entity) {
+
 		    if(pedido.getQuantidade() >= 5 &&  pedido.getQuantidade() < 9) {
 		    	pedido.setValor(pedido.getValor()-(pedido.getValor() * 0.05));
-		    }else if(entity.get(0).getQuantidade() >= 10) {
-		    	((Pedidos) entity).setValor(pedido.getValor()-(pedido.getValor() * 0.10));
+		    }else if(pedido.getQuantidade() >= 10) {
+		    	 entity.get(cont).setValor(pedido.getValor()-(pedido.getValor() * 0.10));
 		    }
+          cont++;
 	  }
-	  
-	  
+
+
 
     List<Pedidos> result = repository.save(entity);
     System.out.println(result.toString());
@@ -40,16 +43,11 @@ public class PedidosBusiness {
   }
 
   public void delete(java.lang.String id) throws Exception {
-    Pedidos entity = this.get(id);
-    this.repository.delete(entity);       
+    this.repository.delete(id);
   }
-  
-  public Pedidos get(java.lang.String id) throws Exception {
-    if(id == null){
-      Page<Pedidos> result = repository.list(pageable);
-    }else{
-      Pedidos result = repository.findOne(id);
-    }
+
+  public Pedidos get(java.lang.String id,java.lang.Long numero_controle) throws Exception {
+    Pedidos result = repository.findOne(id, numero_controle);
     return result;
   }
 
@@ -57,5 +55,13 @@ public class PedidosBusiness {
     Page<Pedidos> result = repository.list(pageable);
     return result;
   }
+
+    public Page<Pedidos> specificSearch(java.lang.String id, java.lang.Integer numero_controle, Pageable pageable) {
+        return repository.specificSearch(id, numero_controle, pageable);
+    }
+
+
+
+
 }
 
